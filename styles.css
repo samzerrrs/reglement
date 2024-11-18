@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto&display=swap");
+/* Styles pour l'ensemble de la page */
+body {
+    font-family: "JetBrains Mono", monospace;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.png'); /* Mettre le lien de votre image ici */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Styles pour le menu de navigation */
+header {
+    font-family: "JetBrains Mono", monospace;
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 10px 0;
+    position: fixed;
+    width: 73%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Conteneur principal avec images */
+.content-container {
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Cadre central transparent */
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.cadre {
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 15%;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les images de côté */
+.side-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Limite la hauteur des images */
+}
+
+/* Image spécifique à gauche */
+.side-image.left {
+    margin-right: 20px;
+}
+
+/* Image spécifique à droite */
+.side-image.right {
+    margin-left: 20px;
+}
+
+/* Style des titres */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff0000;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+/* Style des sections */
+section {
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    .cadre {
+        width: 90%;
+    }
+
+    .side-image {
+        display: none; /* Cache les images latérales sur les petits écrans */
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
