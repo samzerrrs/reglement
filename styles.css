@@ -14,16 +14,19 @@ body {
 /* Styles pour le menu de navigation */
 header {
     font-family: "JetBrains Mono", monospace;
-    background-color: rgba(0, 0, 0, 0.041);
+    background-color: rgba(0, 0, 0, 0.342);
+    background-image: url();
     padding: 10px 0;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
     position: fixed;
-    width: 73%;
+    width: 100%;
     top: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0px 0px;
 }
 
 nav {
@@ -34,7 +37,7 @@ nav {
 }
 
 .logo {
-    flex: 1;
+    flex: 0;
 }
 
 nav ul {
@@ -83,10 +86,10 @@ nav ul li a:hover {
 }
 
 .cadre {
-    background-color: rgba(0, 0, 0, 0.329);
+    background-color: rgba(0, 0, 0, 0.541);
     padding: 30px;
     border-radius: 10px;
-    margin-left: 15%;
+    margin-left: 25%;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -117,6 +120,7 @@ nav ul li a:hover {
 
 /* Style des titres */
 h1 {
+    color: red;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -134,8 +138,32 @@ section {
 }
 
 section p {
+    color: white;
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+.responsive-iframe {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Ajustez en fonction du ratio (ex : 4:3 = 75%) */
+}
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+.rouge {
+    color: red;
+}
+
+p{
+    color: white;
 }
 
 /* Media queries pour les petits écrans */
