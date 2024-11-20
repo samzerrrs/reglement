@@ -14,11 +14,12 @@ body {
 /* Styles pour le menu de navigation */
 header {
     font-family: "JetBrains Mono", monospace;
-    background-color: rgba(0, 0, 0, 0.342);
-    background-image: url();
+    /* background-color: ; */
+    background-image: url(background.png);
     padding: 10px 0;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    /* border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%; */
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);;
     position: fixed;
     width: 100%;
     top: 0;
@@ -62,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff0000;
+    color: #06d6a0;
 }
 
 .logo img {
@@ -83,14 +84,16 @@ nav ul li a:hover {
 .container {
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .cadre {
     background-color: rgba(0, 0, 0, 0.541);
-    padding: 30px;
+    padding: 3.2%; 
     border-radius: 10px;
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 4%; 
+    width: 50%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,14 +123,14 @@ nav ul li a:hover {
 
 /* Style des titres */
 h1 {
-    color: red;
+    color: #06d6a0;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #ff0000;
+    color: #06d6a0;
     margin-top: 20px;
     font-size: 1.3em;
 }
@@ -165,11 +168,38 @@ section p {
 p{
     color: white;
 }
+.discord-button {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin-top: 5%;
+    margin-left: 45%;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
+}
+
+.discord{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 10%;
+} 
 
 /* Media queries pour les petits écrans */
-@media (max-width: 768px) {
+@media (min-width: 319px) and (max-width: 768px) {
     .cadre {
         width: 90%;
+        margin-right: 5%;
     }
 
     .side-image {
