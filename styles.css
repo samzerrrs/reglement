@@ -164,10 +164,16 @@ section p {
 .rouge {
     color: red;
 }
-
+b{
+    color: white;
+}
 p{
     color: white;
 }
+i{
+    color: white;
+}
+
 .discord-button {
     display: flex;
     justify-content: center;
