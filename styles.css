@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto&display=swap");
 /* Styles pour l'ensemble de la page */
 body {
+    height: 100vh;
     font-family: "JetBrains Mono", monospace;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background.png'); /* Mettre le lien de votre image ici */
+    background-image: url('background2.png'); /* Mettre le lien de votre image ici */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+iframe .mcWRN {
+    height: 100vh !important;
 }
 
 /* Styles pour le menu de navigation */
 header {
     font-family: "JetBrains Mono", monospace;
     font-size: 120%;
-    background-color: black; 
+    background-color: rgba(0, 0, 0, 0); 
     background-image: url();
     padding: 10px 0;
     /* border-bottom-left-radius: 5%;
